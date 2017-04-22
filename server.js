@@ -3,7 +3,7 @@ var app = express();
 
 var port = process.env.PORT || 8080;
 
-app.use(express.static(__dirname + '/wokspace'));
+app.use(express.static(__dirname + '/workspace'));
 
 app.get('/', function(req, res) {
 	res.render('index');
